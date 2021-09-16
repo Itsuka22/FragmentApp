@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="11dp"
+        android:text="Form Pendafataran Fans"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:text="Sliahkan isi Sesuai Identitas Anda" />
+
+    <!--    Nama-->
+
+    <include layout="@layout/daftar_activity"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="@color/black"
+        android:text="Jenis Kelamin"
+        android:textSize="18dp"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="perempuan"/>
+
+    </RadioGroup>
+
+    <!--    Sidebar Umur-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usia (17 tahun - 25 tahun)"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <!--    Untuk seek bar jika di emulator tidak berfungsi tapi jika di hape bisa-->
+    <SeekBar
+        android:id="@+id/seekbarUmur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="25"
+        android:min="17"
+        android:padding="15dp"
+        android:progress="20" />
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="18 Th"
+        android:textSize="10dp" />
+
+    <include layout="@layout/layout_tengah" />
+
+</LinearLayout>
